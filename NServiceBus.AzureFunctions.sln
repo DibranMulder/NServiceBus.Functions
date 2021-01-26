@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26906.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NServiceBus.Function", "NServiceBus.Function\NServiceBus.Function.csproj", "{A3B91E25-4106-457B-9D61-99DD3F0CF215}"
 EndProject
@@ -10,6 +10,11 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NServiceBus.Contracts", "NServiceBus.Contracts\NServiceBus.Contracts.csproj", "{92BE2727-E641-42F7-8996-B3B0BEFF25CD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NServiceBus.Sender", "NServiceBus.Sender\NServiceBus.Sender.csproj", "{D2BE06F4-9A06-445D-A9AC-84FF1119FA8A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{4463B9FE-00D8-4042-A1BA-F09CCCBEAD51}"
+	ProjectSection(SolutionItems) = preProject
+		servicebus-topology.ps1 = servicebus-topology.ps1
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

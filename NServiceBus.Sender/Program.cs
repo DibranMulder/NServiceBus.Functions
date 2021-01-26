@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using NServiceBus.Contracts;
 
-
 namespace NServiceBus.Sender
 {
     class Program
@@ -14,7 +13,7 @@ namespace NServiceBus.Sender
         static string DestinationAddress = "main-queue";
         static string ConnectionString = "UseDevelopmentStorage=true";
 
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             AsyncMain().GetAwaiter().GetResult();
         }

@@ -9,7 +9,10 @@ namespace NServiceBus.Function
     public static class TheFunction
     {
         [FunctionName("TheFunction")]
-        public static void Run([NServiceBusTrigger(QueueName = "main-queue")]PingCommand command, NServiceBusCollector collector, TraceWriter log)
+        public static void Run(
+            [NServiceBusTrigger(QueueName = "main-queue")] PingCommand command,
+            NServiceBusCollector collector,
+            TraceWriter log)
         {
             log.Info($"NSB function triggered: {command.Text}");
 
